@@ -1,4 +1,6 @@
 require("truehl")
 require("truehl.remap")
 require("truehl.set")
+require("truehl.lspsaga")
+require("truehl.telescope")
 --print("init.lua")
