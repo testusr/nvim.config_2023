@@ -16,10 +16,7 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-
-
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-
 
     -- colorscheme 
     use({ 'rose-pine/neovim', as = 'rose-pine' })
@@ -27,6 +24,13 @@ return require('packer').startup(function(use)
 
     -- harpoon
     use('theprimeagen/harpoon')
+
+    -- tmux & split window navigation
+    use("christoomey/vim-tmux-navigator") -- enaables splitscreen navigation between splits via CTRL+jklh
+
+    -- commenting with gc
+    use("numToStr/Comment.nvim") -- commeting one or several lines with gcc or gc<num>j
+
 
     -- undotree 
     use('mbbill/undotree')
